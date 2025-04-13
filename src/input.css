@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer components {
+    .custom-container {
+        @apply w-full mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 max-w-[1280px];
+    }
+}
+
+@theme {
+    --default-font-family: 'Plus Jakarta Sans', sans-serif;
+    --color-pink-50: #fff1f3;
+    --color-pink-100: #ffe3e7;
+    --color-pink-200: #ffc0cb;
+    --color-pink-300: #ffa2b3;
+    --color-pink-400: #fe6e8b;
+    --color-pink-500: #f83b66;
+    --color-pink-600: #e51951;
+    --color-pink-700: #c20e43;
+    --color-pink-800: #a20f40;
+    --color-pink-900: #8a113c;
+    --color-pink-950: #4d041c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.pexels.com/photos/260405/pexels-photo-260405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
+    height: 100svh;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #c20e43 0%, #f83b66 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ANIMATION */
+.animate-section {
+    opacity: 0;
+    transition: .8s;
+    filter: blur(5px);
+}
+
+.animate-section.show-animate {
+    opacity: 1;
+    filter: blur(0);
+}
+
+/* Feature */
+.feature-1 {
+    transform: translateY(25%);
+    transition: all 0.5s ease-in-out;
+}
+
+.feature-1.show-animate {
+    transform: translateY(0);
+}
+
+.feature-2 {
+    transform: translateY(25%);
+    transition: all 0.5s ease-in-out;
+}
+
+.feature-2.show-animate {
+    transform: translateY(0);
+}
+
+.feature-3 {
+    transform: translateY(25%);
+    transition: all 0.5s ease-in-out;
+}
+
+.feature-3.show-animate {
+    transform: translateY(0);
+}
+
+/* Testimonial */
+.testimoni-1 {
+    transform: translateY(25%);
+    transition: all 0.5s ease-in-out;
+}
+
+.testimoni-1.show-animate {
+    transform: translateY(0);
+}
+
+.testimoni-2 {
+    transform: translateY(25%);
+    transition: all 0.5s ease-in-out;
+}
+
+.testimoni-2.show-animate {
+    transform: translateY(0);
+}
+
+.testimoni-3 {
+    transform: translateY(25%);
+    transition: all 0.5s ease-in-out;
+}
+
+.testimoni-3.show-animate {
+    transform: translateY(0);
+}

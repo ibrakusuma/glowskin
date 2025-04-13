@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowSkin - Skincare untuk Kulit Sensitif</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 bg-white z-10 border-b border-gray-100">
+        <div class="custom-container py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-pink-500">GlowSkin</span>
+            </div>
+            <div class="hidden md:flex gap-8 items-center">
+                <div class="flex gap-6">
+                    <a href="#home" class="text-gray-700 hover:text-pink-600 transition-colors duration-300 font-medium relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#features" class="text-gray-700 hover:text-pink-600 transition-colors duration-300 font-medium relative group">
+                        Keunggulan
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-pink-600 transition-colors duration-300 font-medium relative group">
+                        Testimoni
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </div>
+                <a href="#" class="bg-gradient-to-r from-pink-400 to-pink-600 text-white px-5 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                    Beli Sekarang
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-b border-gray-100">
+            <div class="custom-container py-4 flex flex-col gap-4">
+                <a href="#home" class="text-gray-700 hover:text-pink-600 py-2 font-medium transition-colors duration-300">Home</a>
+                <a href="#features" class="text-gray-700 hover:text-pink-600 py-2 font-medium transition-colors duration-300">Keunggulan</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-pink-600 py-2 font-medium transition-colors duration-300">Testimoni</a>
+                <a href="#" class="mt-2 bg-gradient-to-r from-pink-400 to-pink-600 text-white px-5 py-2.5 rounded-full font-medium text-center hover:shadow-lg transition-all duration-300">
+                    Beli Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center justify-center mt-16 py-24">
+        <div class="custom-container text-center">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-pink-100 text-pink-700 text-sm font-medium mb-6 border-1 border-pink-200">
+                <i class="fas fa-droplet mr-2"></i> Produk Skincare Terbaik 2025
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 mx-auto">
+                <span class="text-gradient">Kulit Sensitif</span> Tapi Ingin Glowing?
+            </h1>
+            <p class="text-base md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+                GlowSkin menghadirkan solusi skincare berbasis microbiome pertama di Indonesia, diformulasikan khusus untuk kulit sensitif dengan teknologi canggih.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#features" class="bg-gradient-to-r from-pink-400 to-pink-600 text-white font-medium py-3.5 px-8 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
+                    Pelajari Lebih Lanjut
+                </a>
+                <a href="#" class="bg-white hover:bg-gray-50 text-pink-700 font-medium py-3.5 px-8 rounded-full shadow-sm border border-gray-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fas fa-play"></i> Demo Produk
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-16 flex flex-wrap justify-center gap-8 opacity-80">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center">
+                        <i class="fas fa-check text-pink-600 text-xs"></i>
+                    </div>
+                    <span class="text-sm text-gray-700">Lembut</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center">
+                        <i class="fas fa-check text-pink-600 text-xs"></i>
+                    </div>
+                    <span class="text-sm text-gray-700">Aman</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center">
+                        <i class="fas fa-check text-pink-600 text-xs"></i>
+                    </div>
+                    <span class="text-sm text-gray-700">Efektif</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="custom-container">
+            <div class="text-center mb-16">
+                <span class="text-pink-400 font-bold">KEUNGGULAN PRODUK</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 max-w-2xl mx-auto">
+                    Mengapa <span class="text-gradient">GlowSkin</span> Berbeda?
+                </h2>
+                <p class="text-gray-600 text-base md:text-xl mt-4 max-w-3xl mx-auto">
+                    Inovasi terbaru dalam perawatan kulit sensitif dengan pendekatan berbasis microbiome.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="animate-section feature-1 feature-card bg-gradient-to-b from-white to-pink-50 rounded-2xl p-8 border border-gray-100 hover:border-pink-200 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-200 rounded-2xl flex items-center justify-center mb-6 text-pink-600 text-2xl">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Teknologi Microbiome</h3>
+                    <p class="text-gray-600">
+                        Formula pertama di Indonesia yang mendukung keseimbangan microbiome kulit untuk kulit sensitif yang lebih sehat dan kuat.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center gap-2 text-sm text-pink-600 font-medium hover:text-pink-700">
+                        Pelajari lebih lanjut
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="animate-section feature-2 feature-card bg-gradient-to-b from-white to-pink-50 rounded-2xl p-8 border border-gray-100 hover:border-pink-200 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-200 rounded-2xl flex items-center justify-center mb-6 text-pink-600 text-2xl">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Nano Encapsulation</h3>
+                    <p class="text-gray-600">
+                        Bahan aktif dikemas dalam teknologi nano untuk penetrasi lebih dalam tanpa mengiritasi permukaan kulit sensitif.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center gap-2 text-sm text-pink-600 font-medium hover:text-pink-700">
+                        Pelajari lebih lanjut
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="animate-section feature-3 feature-card bg-gradient-to-b from-white to-pink-50 rounded-2xl p-8 border border-gray-100 hover:border-pink-200 transition-all duration-300 hover:-translate-y-0.5">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-200 rounded-2xl flex items-center justify-center mb-6 text-pink-600 text-2xl">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bahan Lokal Premium</h3>
+                    <p class="text-gray-600">
+                        Menggunakan ekstrak tumbuhan endemik Indonesia yang diproses dengan teknologi modern untuk hasil optimal.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center gap-2 text-sm text-pink-600 font-medium hover:text-pink-700">
+                        Pelajari lebih lanjut
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="custom-container">
+            <div class="text-center mb-16">
+                <span class="text-pink-400 font-bold">TESTIMONI PELANGGAN</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 max-w-2xl mx-auto">
+                    Kata Mereka Tentang <span class="text-gradient">GlowSkin</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="animate-section testimoni-1 testimonial-card bg-white rounded-2xl p-6 border border-gray-100">
+                    <div class="flex items-start mb-4 gap-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-14 h-14 rounded-full object-cover border-2 border-pink-200">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Anisa Paramita</h4>
+                            <p class="text-gray-600 text-sm">Pengguna 3 Bulan</p>
+                            <div class="mt-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Sebagai pemilik kulit rosacea, saya sudah mencoba banyak produk. GlowSkin adalah satu-satunya yang tidak membuat kulit saya merah dan terbakar. Teksturnya ringan tapi sangat melembabkan!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="animate-section testimoni-2 testimonial-card bg-white rounded-2xl p-6 border border-gray-100">
+                    <div class="flex items-start mb-4 gap-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-14 h-14 rounded-full object-cover border-2 border-pink-200">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Budi Santoso</h4>
+                            <p class="text-gray-600 text-sm">Pengguna 2 Bulan</p>
+                            <div class="mt-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Awalnya skeptis karena harga lebih mahal dari produk biasa. Tapi setelah pakai, jerawat hormonal saya jauh berkurang dan kulit tidak lagi perih saat pakai produk lain."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="animate-section testimoni-3 testimonial-card bg-white rounded-2xl p-6 border border-gray-100">
+                    <div class="flex items-start mb-4 gap-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="w-14 h-14 rounded-full object-cover border-2 border-pink-200">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Dina Pratiwi</h4>
+                            <p class="text-gray-600 text-sm">Beauty Influencer</p>
+                            <div class="mt-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Sebagai beauty content creator, saya jarang merekomendasikan produk untuk kulit sensitif. Tapi GlowSkin benar-benar berbeda - formulanya canggih tapi sangat gentle. Sekarang jadi staple di routine saya!"
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 flex justify-center">
+                <a href="#" class="inline-flex items-center gap-2 text-pink-700 font-medium hover:text-pink-800 transition-colors">
+                    Lihat lebih banyak testimoni
+                    <i class="fas fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-pink-600 to-pink-900 text-white">
+        <div class="custom-container">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Transformasi Kulit Sensitif Anda?</h2>
+                <p class="text-lg md:text-xl mb-8 opacity-90 leading-relaxed">
+                    Bergabunglah dengan 10.000+ orang yang sudah merasakan manfaat GlowSkin. Dapatkan kulit sehat tanpa iritasi dalam 14 hari atau uang kembali.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#" class="bg-white hover:bg-gray-100 text-pink-700 font-medium py-3.5 px-8 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                        Beli Sekarang
+                    </a>
+                    <a href="#" class="bg-transparent hover:bg-white/10 text-white font-medium py-3.5 px-8 rounded-full border border-white/30 transition-all duration-300 hover:border-white/50 hover:scale-[1.02]">
+                        Konsultasi Gratis
+                    </a>
+                </div>
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm opacity-80">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Garansi 30 Hari</span>
+                    </div>
+                    <div class="w-px h-4 bg-white/30"></div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-truck"></i>
+                        <span>Gratis Ongkir</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-white/30"></div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-lock"></i>
+                        <span>Pembayaran Aman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-gray-300 py-16">
+        <div class="custom-container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-pink-500">GlowSkin</span>
+                    </h3>
+                    <p class="mb-6 max-w-md">
+                        Perawatan kulit berbasis microbiome pertama di Indonesia untuk kulit sensitif. Dikembangkan dengan penelitian dermatologi terkini.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="social-icon w-10 h-10 rounded-full bg-gray-800 hover:bg-pink-700 flex items-center justify-center text-white transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 rounded-full bg-gray-800 hover:bg-pink-700 flex items-center justify-center text-white transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 rounded-full bg-gray-800 hover:bg-pink-700 flex items-center justify-center text-white transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 rounded-full bg-gray-800 hover:bg-pink-700 flex items-center justify-center text-white transition-all duration-300 hover:-translate-y-1">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Navigasi</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-pink-400 transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="hover:text-pink-400 transition-colors duration-300">Keunggulan</a></li>
+                        <li><a href="#testimonials" class="hover:text-pink-400 transition-colors duration-300">Testimoni</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Kontak Kami</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-pink-500"></i>
+                            <span>Jl. Sudirman No. 123, Jakarta Selatan 12190</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-pink-500"></i>
+                            <span>+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-pink-500"></i>
+                            <span>hello@glowskin.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2025 GlowSkin. All rights reserved.
+                </p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Shipping Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Close mobile menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+        
+
+        const handleScroll = () => {
+            const nav = document.querySelector('nav');
+            const fixedNav = nav.offsetTop;
+
+            if (window.scrollY > fixedNav) {
+                nav.classList.add('navbar-fixed');
+                nav.classList.add('text-grey');
+            } else {
+                nav.classList.remove('navbar-fixed')
+            }
+
+            const sections = document.querySelectorAll('.animate-section');
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                // Cek apakah bagian atas section berada di dalam viewport
+                if (sectionTop < windowHeight && sectionTop > 0) {
+                    section.classList.add('show-animate');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html>
